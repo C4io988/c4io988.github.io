@@ -4,8 +4,6 @@ const fotoPeril = document.querySelector('.foto');
 const btnDance = document.getElementById('btnDance');
 const btnWalk = document.getElementById('btnWalk');
 const btnClean = document.getElementById('btnClean');
-const btnPlay = document.getElementById('btnPlay');
-const btnSleep = document.getElementById('btnSleep');
 const btnDefault = document.getElementById('btnDefault');
 
 const imagemPadrao = 'img/perfil.jpg';
@@ -41,9 +39,8 @@ btnDance.addEventListener('click', function() {
     clearTimeout(danceClickTimeout);
     
     if (danceClickCount === 1) {
-
         trocarImagem('img/dance-p.gif');
-que
+        
         danceClickTimeout = setTimeout(function() {
             danceClickCount = 0;
         }, 300);
