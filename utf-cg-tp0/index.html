@@ -10,10 +10,15 @@
 <body>
     <div class="container">
         <aside class="esquerda">
-            <img class="foto" src="img/club-penguin-club-ezgif.com-webp-to-gif-converter.gif" data-alt-src="img/Gemini_Generated_Image_eo47wgeo47wgeo47.png" alt="Foto de perfil">
+            <div class="secao-foto">
+                <img class="foto" src="img/perfil.jpg" alt="Foto de perfil">
+            </div>
             <div class="conquistas">
                 <h3>Conquistas</h3>
-                <img src="img/club-penguin-club-ezgif.com-webp-to-gif-converter.gif" alt="Conquista 1" class="fotinha">
+                <div class="texto-fotinha">
+                <img src="img/lvl.png" alt="Conquista 1" class="fotinha">
+                <span>anos de serviço<br>1000xp</span>
+                </div>
                 <p>4 anos de CEFET</p>
                 <p>Nome limpo</p>
                 <p>2 anos de experiência em QA</p>
@@ -22,16 +27,19 @@
 
         <main class="conteudo">
             <header class="cabecalho">
-                <h1>Perfil — Caio Cunha</h1>
-                <p class="sub">Analista de Testes QA Jr</p>
+                <h1>Perfil — Caio Costa Cunha</h1>
             </header>
 
             <section class="sobre">
                 <h2>Sobre mim</h2>
-                <p>Meu nome é Caio Cunha, tenho 24 anos.</p>
-                <p>Trabalho como Analista de Testes QA Jr.</p>
-                <p>Gosto de jogar qualquer coisa; meu favorito é Minecraft, mas o que mais me marcou foi Club Penguin.</p>
-                <p>Assisto filmes, séries, animes e doramas.</p>
+                <p>Meu nome é Caio Costa Cunha, tenho 24 anos.</p>
+                <p>Profissionalmente, atuo como Analista de Testes QA Júnior (basicamente o cara que tenta
+                     quebrar o sistema antes do usuário).
+                </p>
+                <p>Fora do expediente, minha verdadeira missão é trabalhar para bancar as promoções e aumentar minha biblioteca na Steam.
+                     Sou do tipo que joga qualquer coisa, de FPS a fazendinha.
+                </p>
+                <p>Gosto de assistir filmes, séries, animes e doramas.</p>
             </section>
 
             <section class="favoritos">
@@ -39,36 +47,60 @@
 
                 <div class="blocos">
                     <div class="bloco">
-                        <h3 class="titulo">Stranger Things</h3>
-                        <span class="icone" tabindex="0">!</span>
-                        <div class="tooltip">Série de ficção com mistérios e personagens fortes.</div>
-                        <img src="img/club-penguin-club-ezgif.com-webp-to-gif-converter.gif" alt="Capa Stranger Things">
-                    </div>
-
-                    <div class="bloco">
-                        <h3 class="titulo">Naruto</h3>
-                        <span class="icone" tabindex="0">!</span>
-                        <div class="tooltip">Anime de ação e amizade, cheio de lutas e aventuras.</div>
-                        <img src="img/club-penguin-club-ezgif.com-webp-to-gif-converter.gif" alt="Capa Naruto">
-                        <p>Texto</p>
-                    </div>
-
-                    <div class="bloco">
                         <h3 class="titulo">Minecraft</h3>
                         <span class="icone" tabindex="0">!</span>
-                        <div class="tooltip">Jogo de construção e sobrevivência com blocos.</div>
-                        <img src="img/club-penguin-club-ezgif.com-webp-to-gif-converter.gif" alt="Capa Minecraft">
+                        <div class="tooltip">Minezin brabo dms.</div>
+                        <img src="img/mine.jpg" alt="Capa do Minecraft">
+                    </div>
+
+                    <div class="bloco">
+                        <h3 class="titulo">HunteXHunter</h3>
+                        <span class="icone" tabindex="0">!</span>
+                        <div class="tooltip">É uma série de mangá de aventura e fantasia
+                             focada na jornada de Gon Freecss para se tornar um Hunter e encontrar seu pai.
+                        </div>
+                        <img src="img/hxh.jpg" alt="Capa do HXH">
+                    </div>
+
+                    <div class="bloco">
+                        <h3 class="titulo">Club Penguin</h3>
+                        <span class="icone" tabindex="0">!</span>
+                        <div class="tooltip">Club Penguin foi um MMO lançado em 2005 e
+                            que funcionou de 2005 a 2017. O jogo apresentava um mundo virtual que incluía 
+                            uma ampla gama de jogos e atividades online.
+                        </div>
+                        <img src="img/cp.jpg" alt="Capa do CP">
+                    </div>
+                    <div class="bloco">
+                        <h3 class="titulo">Segredo dos Animais</h3>
+                        <span class="icone" tabindex="0">!</span>
+                        <div class="tooltip">Eleito líder da fazenda, um boi adolescente livre, leve e
+                             solto precisa amadurecer rápido para proteger os outros animais contra uma matilha de coiotes famintos.
+                        </div>
+                        <img src="img/SDAn.jpg" alt="Capa Segredo dos Animais">
+                    </div>
+                    <div class="bloco">
+                        <h3 class="titulo">Sea of thives</h3>
+                        <span class="icone" tabindex="0">!</span>
+                        <div class="tooltip">Sea of Thieves é um jogo multiplayer em primeira pessoa cooperativo/PvP de piratas</div>
+                        <img src="img/Sea.jpg" alt="Capa do Sea">
                     </div>
                 </div>
             </section>
 
             <div class="botoes">
+                
                 <button id="meuBotao">Clique aqui</button>
+                <div id="botoesAcoes" class="botoes-acoes escondido">
+                    <button id="btnDance" class="btn-acao" data-img="img/dance.gif">Dançar</button>
+                    <button id="btnWalk" class="btn-acao" data-img="img/walk.gif">Andar</button>
+                    <button id="btnClean" class="btn-acao" data-img="img/limpa.gif">Limpar</button>
+                    <button id="btnDefault" class="btn-acao" data-img="img/club-penguin-club-ezgif.com-webp-to-gif-converter.gif">Padrão</button>
+                </div>
             </div>
         </main>
     </div>
 
-    <script>
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

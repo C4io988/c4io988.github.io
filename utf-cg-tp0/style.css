@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
@@ -19,45 +21,55 @@ body {
     gap: 24px;
 }
 
-.esquerda {
-    width: 220px;
+
+.secao-foto {
     background: #fff;
-    padding: 16px;
+    padding: 12px;
     border: 1px solid #cfd8e3;
     box-shadow: 0 2px 4px rgba(0,0,0,0.04);
-    border-radius: 0 4px 4px 0;
+    border-radius: 4px;
     box-sizing: border-box;
 }
 
 img.foto {
     width: 100%;
-    height: auto;
+    height: 250px;
     border-radius: 6px;
     display: block;
-    margin-bottom: 12px;
+    margin: 0;
     box-shadow: 0 4px 8px rgba(15,86,88,0.12);
+    object-fit: cover;
 }
 
 
 .conquistas {
     text-align: left;
     font-size: 14px;
-    margin-top: 6px;
+    margin: 0;
+    padding: 10px;
+    background: #fbfeff;
+    border: 1px solid #e6eef3;
+    border-radius: 4px;
+    font-family: Georgia, serif;
 }
 
 .conquistas h3 {
-    margin: 6px 0 8px 0;
-    font-size: 16px;
     color: #15616a;
+    font-family: 'Roboto', sans-serif;
 }
 
 .conquistas .fotinha {
-    width: 60px;
+    width: 70px;
     height: auto;
     display: block;
     margin-bottom: 6px;
 }
 
+.conquistas .texto-fotinha {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
 .conteudo {
     flex: 1;
@@ -71,14 +83,9 @@ img.foto {
 
 .cabecalho h1 {
     margin: 0 0 8px 0;
-    font-size: 24px;
+    font-size: 34px;
     color: #0f5658;
-}
-
-.cabecalho .sub {
-    margin: 0 0 12px 0;
-    color: #555;
-    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .sobre, .favoritos {
@@ -92,14 +99,12 @@ img.foto {
 .sobre h2, .favoritos h2 {
     margin-top: 0;
     color: #178386;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* estilos para blocos de favoritos */
 .favoritos .blocos {
     display: flex;
-    gap: 12px;
-    margin-top: 10px;
-    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .favoritos .bloco {
@@ -155,14 +160,12 @@ img.foto {
 
 .favoritos .bloco img {
     width: 100%;
-    height: auto;
-    margin-top: 8px;
-    border-radius: 3px;
+    margin-top: 3px;
+    border-radius: 6px;
 }
 
 .botoes {
     margin-top: 14px;
-    text-align: left;
 }
 
 .botoes button {
@@ -177,4 +180,37 @@ img.foto {
 
 .botoes button:hover {
     background-color: #0f5658;
+}
+
+.botoes-acoes {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    transition: all 0.3s ease;
+}
+
+.botoes-acoes.escondido {
+    display: none;
+}
+
+.btn-acao {
+    background-color: #15616a;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+
+.btn-acao:hover {
+    background-color: #0f5658;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.btn-acao:active {
+    transform: translateY(0);
 }
