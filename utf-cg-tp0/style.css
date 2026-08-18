@@ -1,58 +1,180 @@
 body {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    border: 3px solid #0f5658;
-}
-
-
-img {
-    box-shadow: #0f5658;
-    height: 200px;
-    width: 400px;
-}
-
-div {
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
-
-    h1 {
-        color: #178386;
-        font-size: 36px;
-        margin-bottom: 10px;
-    }
-
-    p {
-        color: #aaa70a;
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px;
+    border: 3px solid #0f5658;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f6fb;
+    color: #222;
 }
 
-span {
-    align-items: center;
+.container {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    border: 3px solid #0f5658;
+    width: 100%;
+    align-items: flex-start;
+    gap: 24px;
+}
 
-    button {
-        background-color: #178386;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        cursor: pointer;
+.esquerda {
+    width: 220px;
+    background: #fff;
+    padding: 16px;
+    border: 1px solid #cfd8e3;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    border-radius: 0 4px 4px 0;
+    box-sizing: border-box;
+}
 
-        &:hover {
-            background-color: #0f5658;
-        }
-    }
+img.foto {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 8px rgba(15,86,88,0.12);
+}
+
+
+.conquistas {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.conquistas h3 {
+    margin: 6px 0 8px 0;
+    font-size: 16px;
+    color: #15616a;
+}
+
+.conquistas .fotinha {
+    width: 60px;
+    height: auto;
+    display: block;
+    margin-bottom: 6px;
+}
+
+
+.conteudo {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #cfd8e3;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    box-sizing: border-box;
+}
+
+.cabecalho h1 {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    color: #0f5658;
+}
+
+.cabecalho .sub {
+    margin: 0 0 12px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.sobre, .favoritos {
+    margin-top: 10px;
+    padding: 10px;
+    background: #fbfeff;
+    border: 1px solid #e6eef3;
+    border-radius: 4px;
+}
+
+.sobre h2, .favoritos h2 {
+    margin-top: 0;
+    color: #178386;
+}
+
+/* estilos para blocos de favoritos */
+.favoritos .blocos {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.favoritos .bloco {
+    position: relative;
+    width: 160px;
+    background: #fff;
+    border: 1px solid #e1e8ee;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.favoritos .bloco .icone {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 50%;
+    background: #178386;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    cursor: default;
+    user-select: none;
+}
+
+.favoritos .bloco .tooltip {
+    display: none;
+    position: absolute;
+    top: 32px;
+    right: 8px;
+    width: 200px;
+    background: #fff;
+    color: #222;
+    border: 1px solid #e1e8ee;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    z-index: 20;
+    font-size: 13px;
+    text-align: left;
+}
+
+.favoritos .bloco .icone:hover + .tooltip,
+.favoritos .bloco .icone:focus + .tooltip {
+    display: block;
+}
+
+.favoritos .bloco img {
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+    border-radius: 3px;
+}
+
+.botoes {
+    margin-top: 14px;
+    text-align: left;
+}
+
+.botoes button {
+    background-color: #178386;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.botoes button:hover {
+    background-color: #0f5658;
 }
